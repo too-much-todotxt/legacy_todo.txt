@@ -10,23 +10,23 @@ The first and most important rule of todo.txt:
 
 ## Why plain text?
 
-Plain text is software and operating system agnostic. It’s searchable,
-portable, lightweight, and easily manipulated. It’s unstructured. It
-works when someone else’s web server is down or your Outlook .PST file
-is corrupt. There’s no exporting and importing, no databases or tags or
+Plain text is software and operating system agnostic. It's searchable,
+portable, lightweight, and easily manipulated. It's unstructured. It
+works when someone else's web server is down or your Outlook .PST file
+is corrupt. There's no exporting and importing, no databases or tags or
 flags or stars or prioritizing or *insert company name here*-induced
-rules on what you can and can’t do with it.
+rules on what you can and can't do with it.
 
 ## The 3 axes of an effective todo list
 
-Using special notation in todo.txt, you can create a list that’s
+Using special notation in todo.txt, you can create a list that's
 sliceable by 3 key axes.
 
 ### Priority
 
-Your todo list should be able to tell you what’s the next most important
+Your todo list should be able to tell you what's the next most important
 thing for you to get done - either by project or by context or overall.
-You can optionally assign tasks a priority that’ll bubble them up to the
+You can optionally assign tasks a priority that'll bubble them up to the
 top of the list.
 
 ### Project
@@ -35,20 +35,20 @@ The only way to move a big project forward is to tackle a small subtask
 associated with it. Your `todo.txt` should be able to list out all the
 tasks specific to a project.
 
-In order to move along a project like “Cleaning out the garage,” my task
+In order to move along a project like "Cleaning out the garage," my task
 list should give me the next logical action to take in order to move
-that project along. “Clean out the garage” isn’t a good todo item; but
-“Call Goodwill to schedule pickup” in the “Clean out garage” project is.
+that project along. "Clean out the garage" isn't a good todo item; but
+"Call Goodwill to schedule pickup" in the "Clean out garage" project is.
 
 ### Context
 
 [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done)
 author David Allen suggests splitting up your task lists by context -
-ie, the place and situation where you’ll work on the job. Messages that
+ie, the place and situation where you'll work on the job. Messages that
 you need to send go in the `@email` context; calls to be made `@phone`,
 household projects `@home`.
 
-That way, when you’ve got a few minutes in the car with your cell phone,
+That way, when you've got a few minutes in the car with your cell phone,
 you can easily check your `@phone` tasks and make a call or two while
 you have the opportunity.
 
@@ -80,10 +80,10 @@ Here are the rest.
 
 ## Incomplete Tasks: 3 Format Rules
 
-The beauty of todo.txt is that it’s completely unstructured; the fields
+The beauty of todo.txt is that it's completely unstructured; the fields
 you can attach to each task are only limited by your imagination. To get
-started, use special notation to indicate task context (e.g. `@phone` ),
-project (e.g. `+GarageSale` ) and priority (e.g. `(A)` ).
+started, use special notation to indicate task context (e.g. `@phone` ),
+project (e.g. `+GarageSale` ) and priority (e.g. `(A)` ).
 
 A todo.txt file might look like the following:
 
@@ -102,7 +102,7 @@ To just see the `+GarageSale` project items would output:
     (B) Schedule Goodwill pickup +GarageSale @phone
     Post signs around the neighborhood +GarageSale
 
-There are three formatting rules for current todo’s.
+There are three formatting rules for current todo's.
 
 ### Rule 1: If priority exists, it ALWAYS appears first.
 
@@ -119,7 +119,7 @@ These tasks do not have any priorities:
     (b) Get back to the boss
     (B)->Submit TPS report
 
-### Rule 2: A task’s creation date may optionally appear directly after priority and a space.
+### Rule 2: A task's creation date may optionally appear directly after priority and a space.
 
 If there is no priority, the creation date appears first. If the
 creation date exists, it should be in the format `YYYY-MM-DD`.
@@ -129,7 +129,7 @@ These tasks have creation dates:
     2011-03-02 Document +TodoTxt task format
     (A) 2011-03-02 Call Mom
 
-This task doesn’t have a creation date:
+This task doesn't have a creation date:
 
     (A) Call Mom 2011-03-02
 
@@ -183,13 +183,13 @@ For example:
 
     x 2011-03-02 2011-03-01 Review Tim's pull request +TodoTxtTouch @github
 
-If you’ve prepended the creation date to your task, on completion it
+If you've prepended the creation date to your task, on completion it
 will appear directly after the completion date. This is so your
 completed tasks sort by date using standard sort tools. Many Todo.txt
 clients discard priority on task completion. To preserve it, use the
-`key:value` format described below (e.g. `pri:A`)
+`key:value` format described below (e.g. `pri:A`)
 
-With the completed date (required), if you’ve used the prepended date
+With the completed date (required), if you've used the prepended date
 (optional), you can calculate how many days it took to complete a task.
 
 ## Additional File Format Definitions
@@ -198,7 +198,7 @@ Tool developers may define additional formatting rules for extra
 metadata.
 
 Developers should use the format `key:value` to define additional
-metadata (e.g. `due:2010-01-02` as a due date).
+metadata (e.g. `due:2010-01-02` as a due date).
 
 Both `key` and `value` must consist of non-whitespace characters, which
 are not colons. Only one colon separates the `key` and `value`.
